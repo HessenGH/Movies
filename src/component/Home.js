@@ -3,11 +3,11 @@ import useFetch from "./useFetch";
 
 const Home = () => {
     
-    const {data:movies}=useFetch('http://localhost:8000/movies')
+    const {data}=useFetch('https://jsonplaceholder.typicode.com/photos')
     return ( 
         <div>
            
-               {movies && <MoviesList movies={movies} /> }
+               {data && <MoviesList movies={data} /> }
         </div>
      );
 }

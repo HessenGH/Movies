@@ -34,9 +34,9 @@ const MoviesList = ({movies}) => {
                 :item.category.toLowerCase().includes(category);
             })
             .map(movie=>(
-                <div  className="moive-preview"  key={movie.id}> 
+                <div  className="movie-preview"  key={movie.id}> 
                 <Link to={`/movies/${movie.id}`}>
-                <img src={movie.image} alt="movie"/>
+                <img src={movie.url} alt="movie"/>
                 <h3 className="title">{movie.title}</h3>
                 </Link>
                 </div>
